@@ -1,50 +1,38 @@
-import React from "react";
+import React , { useState }  from "react";
 import Logo from "../img/Logo.svg";
 import NavIcon from "../img/navIcon.png";
+import CrossIcon from "../img/crossIcon.png";
+import {Link}  from 'react-router-dom'
 
 function Header() {
+
+  const [isMobile , setIsMobile] = useState(false);
   return (
     <>
       <nav className="navbar">
-        <div className="logo-div">
-          <img src={Logo} alt="Airavat Tour and Travel" />
-        </div>
+       
+          <img src={Logo} alt="Airavat Tour and Travel"  className="logo-div"/>
+       
 
-        <div className="nav-icon">
-          <img className="navIcon" src={NavIcon} alt="" />
-        </div>
-        <div className="nav-menu">
-          <ul className="nav-menu-list">
-            <li className="nav-menu-list-item">
-              <a className="menu-item" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-menu-list-item">
-              <a className="menu-item" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-menu-list-item">
-              
-              <a className="menu-item" href="#">
-                Packages
-              </a>
-            </li>
-            <li className="nav-menu-list-item">
-              
-              <a className="menu-item" href="#">
-                Contact Us
-              </a>
-            </li>
-            <li className="nav-menu-list-item">
-              
-              <a href="tel:+918000354629" className="call-us">
-                Call Us
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
+        
+        onClick={() => setIsMobile(false)}>
+          <Link to="/" className="home">
+            <li>Home</li>
+          </Link>
+          <Link to="/about" className="about">
+            <li>About</li>
+          </Link>
+          <Link to="/contactus" className="contactus">
+            <li>Contact Us</li>
+          </Link>
+          <a href="tel:+918000354629" className="callus">
+            <li>Call Us</li>
+          </a>
+        </ul>
+       <div className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
+         {isMobile ? <img src={CrossIcon} /> : <img src={NavIcon} /> }
+       </div>
       </nav>
     </>
   );

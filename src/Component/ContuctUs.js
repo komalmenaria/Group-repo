@@ -3,7 +3,7 @@ function ContuctUs() {
   return (
     <div>
         
-        
+        ContuctUs
     </div>
   )
 }
