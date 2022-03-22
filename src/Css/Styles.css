@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 /* Header Start  */
+
+
 /* Desktop css  */
 .navbar {
   width: 100%;
@@ -15,7 +19,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 1% 5%;
-  background-color: #ffffff;
 }
 
 .nav-links {
@@ -32,17 +35,24 @@
   font-size: 20px;
   margin: 0 10px;
   padding: 10px 20px;
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+
+  /* 1st */
+
+  color: #212832;
 }
 
 .home:hover,
 .about:hover,
-.contactus:hover{
-color: #df6951;
-border-bottom: 1px solid #DF6951;
+.contactus:hover {
+  color: #df6951;
 }
+
 .callus {
- color: white;
-  background: #df6951;
+  border: 1px solid #212832;
   border-radius: 5px;
 }
 .mobile-menu-icon {
@@ -50,7 +60,6 @@ border-bottom: 1px solid #DF6951;
 }
 
 @media screen and (max-width: 780px) {
-  
   .mobile-menu-icon {
     display: block;
   }
@@ -59,19 +68,20 @@ border-bottom: 1px solid #DF6951;
   }
   .callus {
     color: none;
-     background: none;
-     border-radius: 0px;
-   }
+    background: none;
+    border: none;
+    border-radius: 0px;
+  }
   .nav-links-mobile {
     position: absolute;
     display: block;
     list-style: none;
     background-color: #df6951;
     left: 0;
-    top: 13%;
+    top: 15%;
     transition: all 0.5 ease-out;
     width: 100%;
-  
+    z-index: 2;
   }
 
   .home,
@@ -84,21 +94,204 @@ border-bottom: 1px solid #DF6951;
     width: 100%;
     transition: all 0.5 ease;
   }
-  
-.home:hover,
-.about:hover,
-.contactus:hover{
-color: #ffffff;
-border-bottom: 1px solid #ffffff;
-}
   .mobile-menu-icon {
     display: block;
     position: absolute;
     font-size: 30px;
-    top: 20px;
+    top: 45px;
     right: 25px;
+  }
+}
+/* Header End  */
+
+/* Contact Start */
+
+
+.contactus-section{
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../img/Contactus2.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+
+.contactForm {
+  width: 380px;
+  height: 379px;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  z-index: 1;
+ 
+}
+.contactForm > form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px 50px 50px;
+}
+
+.contactForm > form > h4 {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #3a556a;
+  padding-bottom: 20px;
+}
+
+
+.contactForm > form > .inputArea{
+  border: none;
+  border-bottom: 1px solid #FFA90F;
+  font-family: 'Rokkitt';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 19px;
+padding: 10px;
+margin-bottom: 10px;
+
+}
+.contactForm > form > .inputArea:focus{
+ color: #212832;
+ outline: none;
+}
+.contactForm > form >  button {
+background: #FFA90F;
+font-family: 'Rokkitt';
+font-size: 20px;
+color: #fff;
+border-radius: 6px;
+width: 50%;
+border: none;
+margin-top: 20px;
+padding: 10px 30px;
+font-weight: bold;
+transition:background 1s ;
+transition:color 1s ;
+
+}
+.contactForm > form >  button:hover{
+  color: #FFA90F;
+  border: 1px solid #FFA90F;
+  background:none;
+}
+
+
+
+.contactInfo{
+  width: 307px;
+  z-index: 1;
+}
+
+.contactInfo > h4{
+  
+font-family: 'Rokkitt';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 34px;
+color: #000000;
+}
+
+.contactInfo > .infoItems{
+  margin-top: 20px;
+  margin-left:-10px;
+}
+
+.contactInfo > .infoItems > .infoItem{
+ padding: 10px;
+ 
+}
+
+.contactInfo > .infoItems > .infoItem > span{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+font-family: 'Rokkitt';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 24px;
+color: #000000;
+}
+
+.contactInfo > .infoItems > .infoItem > span > img{
+  margin-right: 10px;
+}
+
+.contactInfo > .infoItems > .infoItem > address , p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #000000;
+
+}
+.contactInfo > .infoItems > .infoItem > p > a{
+  color: #000000;
+}
+
+
+.contactInfo > .infoItems > .infoItem > p > a:hover{
+  color: #FFA90F;
+}
+.contactUsImgLeft{
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  z-index: 0;
+  display: block;
+}
+@media screen and (max-width: 1000px) {
+ 
+.contactForm > form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px 50px 40px;
+}
+
+.contactUsImgLeft{
+  display: none;
+}
+
+.contactus-section{
+ background-position: 10px 10px; 
+}
+}
+
+
+@media screen and (max-width: 780px) {
+
+
+  .contactus-section{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactForm {
+    width: 312px}
+
+    .contactForm > form > button{
+      width: 100%;
+    }
+
+    .contactInfo > .infoItems {
+      margin-top: 22px;
+      margin-left: 0px;
+  }
+  .contactInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   }
   
 }
-/* Header End  */
+/* Contact End  */
