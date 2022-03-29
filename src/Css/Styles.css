@@ -225,7 +225,20 @@ color: #000000;
   margin-right: 10px;
 }
 
-.contactInfo > .infoItems > .infoItem > address , p{
+.contactInfo > .infoItems > .infoItem > address{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #000000;
+
+}
+
+.contactInfo > .infoItems > .infoItem >  p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #000000;
+
+}
+.contactInfo > .infoItems > .infoItem >  p{
   margin-left: 40px;
   margin-top: 10px;
   color: #000000;
@@ -295,3 +308,115 @@ color: #000000;
   
 }
 /* Contact End  */
+
+
+
+/* subscription  */
+.subscription-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 80px;
+ background: url("../img/subscription-background.png");
+ background-repeat: no-repeat;
+ margin-left: 40px;
+}
+
+.subscription-div > p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 33px;
+line-height: 54px;
+text-align: center;
+color: #5E6282;
+padding: 0 10rem 20px  10rem;
+
+
+}
+
+.subscription-div > .subscription-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscription-div > .subscription-form > .subscription {
+  padding: 10px 25px;
+  margin: 10px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 23px;
+text-align: center;
+color: #FFFFFF;
+  border: none;
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+border-radius: 10px;
+border: 2px solid #FF7D68;
+transition: all 0.6s ease-in-out;
+
+}
+
+.subscription-div > .subscription-form > .subscription:hover{
+  background: none;
+  border: 2px solid #FF7D68;
+  color:#39425D;
+  cursor: pointer;
+}
+
+.subscription-div > .subscription-form > input {
+  margin: 10px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #39425D;
+border: 1px solid #39425D;
+outline: none;
+padding: 13px 50px;
+/* background: ; */
+background: url("../img/subscriptioninputicon.png") , #FFFFFF;
+background-repeat: no-repeat;
+background-position: 5% 50%;
+border-radius: 5px;
+}
+
+.subscription-div > .subscription-form > input:focus{
+  box-shadow:   2px 2px 10px 0px #5E6282;
+}
+
+@media screen and (max-width: 980px){
+  .subscription-div {
+    padding: 10rem 80px;
+    /* background-size: 81%;     */
+    background-position-y: center;
+    margin-left: 0px;
+}
+.subscription-div > p {
+  line-height: 48px;
+  padding: 0 0rem 20px 0rem;
+}
+.subscription-div > .subscription-form {
+  margin-right: 0rem;
+}
+}
+@media screen and (max-width: 480px){
+  .subscription-div {
+    padding: 4rem 19px;
+}
+.subscription-div > .subscription-form {
+  flex-direction: column;
+}
+
+.subscription-div > p {
+  font-size: 24px;
+  line-height: 32px;
+  
+}
+
+}
+/* end subscription  */

@@ -1,12 +1,13 @@
 import Header from "./Component/Header";
 import {} from "./Css/Styles.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
+import { BrowserRouter as Router,Routes , Route } from "react-router-dom";
 
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Contact from "./Component/ContuctUs";
 import Footer from "./Component/Footer";
+import Subscription from "./Component/Subscription";
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} exact /> 
         <Route path="/contactus" element={<Contact />} exact />  
       </Routes >
+      <Subscription />
       {/* <Footer /> */}
     </Router>
   );
