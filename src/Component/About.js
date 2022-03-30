@@ -4,7 +4,11 @@ function About() {
   return (
     <>
 <div className="about-section">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum repellat voluptatum cupiditate quibusdam, sunt velit vero eos possimus similique, delectus est quaerat cumque reiciendis illum minus dolorem magnam recusandae accusamus. Nobis, non mollitia? Quod, ipsum? Provident impedit cumque vero excepturi a tenetur amet perferendis illum, commodi enim accusantium in sapiente maxime quibusdam? Harum, ipsa pariatur iure tempore, reprehenderit nostrum saepe hic optio alias doloribus earum tenetur exercitationem qui rerum, voluptatum est ad sequi eius enim facere. Odio earum, unde reprehenderit sit at molestias impedit quo nihil asperiores ipsum ullam distinctio iste illo vel nostrum eaque tempore cumque pariatur maiores.\
+ <div className="about-content">
+ <h1>Our Mission</h1>
+ <span></span>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eaque ut error, unde expedita amet omnis, totam repellat itaque aspernatur atque, dignissimos necessitatibus dolor non. Eaque illo quam quis deserunt, enim, doloremque, cupiditate voluptas doloribus laborum quaerat distinctio voluptatem excepturi molestias incidunt obcaecati minima cumque facere. Ex consequuntur iure praesentium nostrum beatae vero, repellat similique eos rem repudiandae distinctio laudantium reprehenderit provident maiores dicta necessitatibus quod doloremque dolorem ullam recusandae.</p>
+ </div>
 </div>
 
     </>
