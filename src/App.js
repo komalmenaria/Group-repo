@@ -8,6 +8,8 @@ import About from "./Component/About";
 import Contact from "./Component/ContuctUs";
 import Footer from "./Component/Footer";
 import Subscription from "./Component/Subscription";
+import Packages from "./Component/Packages";
+
 
 
 
@@ -18,10 +20,11 @@ function App() {
       <Routes  >
         <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<About />} exact /> 
+        <Route path="/packages" element={<Packages />} exact /> 
         <Route path="/contactus" element={<Contact />} exact />  
       </Routes >
       <Subscription />
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
