@@ -58,6 +58,16 @@ a{
 .mobile-menu-icon {
   display: none;
 }
+@media screen and (max-width: 830px) {
+  
+.home,
+.about,
+.contactus,
+.callus {
+  margin: 0 7px;
+  padding: 10px 10px;}
+  
+}
 
 @media screen and (max-width: 780px) {
   .mobile-menu-icon {
@@ -93,6 +103,7 @@ a{
     padding: 32px;
     width: 100%;
     transition: all 0.5 ease;
+    
   }
   .mobile-menu-icon {
     display: block;
@@ -356,7 +367,7 @@ color: #FFFFFF;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
 border-radius: 10px;
 border: 2px solid #FF7D68;
-transition: all 0.6s ease-in-out;
+transition: all 0.5s ease-in-out;
 
 }
 
@@ -514,7 +525,7 @@ width: 10rem;
 width: 100%;
 height: 800px;
 background: url("../img/Aboutbg.svg");
-background-position: center;
+background-position: top left;
 background-repeat: no-repeat;
 padding: 20rem 50px 0px 50px;
 margin-bottom: 100px;
@@ -553,6 +564,12 @@ color: #000000;
 
 
 @media screen and (max-width: 900px){
+  
+.about-section {
+ 
+background-position: center;
+
+}
   .about-content {
     
     margin-left: 0%;
@@ -572,3 +589,481 @@ color: #000000;
   
 }
 /* end about  */
+
+
+/* Hero  */
+.heroSection{
+  margin-top: -10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: url("../img/HeroBg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 8rem 0px 0px 70px;
+}
+.heroSection > .hero-content {
+margin-top: 150px;
+}
+.heroSection > .hero-content > h4{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+text-transform: uppercase;
+color: #DF6951;
+}
+
+.heroSection > .hero-content > h1 {
+  font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 89px;
+letter-spacing: -0.04em;
+color: #181E4B;
+background: url("../img/Decore.png");
+background-repeat: no-repeat;
+background-position: 50% 30%;
+
+}
+
+
+.heroSection > .hero-content > p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5E6282;
+  padding-right: 40px;
+
+}
+
+.heroSection > .hero-content > a{
+  background: #F1A501;
+box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+border-radius: 10px;
+font-family: 'Trade Winds';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+padding: 10px 30px;
+transition: all 0.5s  ease-in-out;
+border: 2px solid #F1A501 ;
+
+}
+
+
+.heroSection > .hero-content > a:hover{
+  background: none;
+  border: 2px solid #F1A501 ;
+  color: #39425D;
+}
+@media screen and (max-width: 900px) {
+  .heroSection > .hero-image > img {
+    max-width: 100%;
+  }
+  
+.heroSection{
+  align-items: center;
+  padding: 12rem 0px 70px 32px;
+}
+
+
+.heroSection > .hero-content {
+  margin-top: 0px;
+  }
+
+  .heroSection > .hero-content > h1 {
+    font-size: 67px;
+    line-height: 75px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .heroSection > .hero-image > img {
+   display: none;
+  }
+  .heroSection > .hero-content > h1 {
+    font-size: 60px;
+    line-height: 69px;
+}
+.heroSection > .hero-content > h4 {
+  font-size: 14px;
+  line-height: 30px;
+}
+}
+/* end Hero  */
+
+
+/* services  */
+
+.services-section{
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/ServiceBG1.png");
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  
+}
+.services-section-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.services-section >  .service-sub-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #5E6282;
+}
+.services-section >  .service-heading{
+  font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 64px;
+text-align: center;
+text-transform: capitalize;
+color: #14183E;
+}
+
+
+.single-service{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 267px;
+  height: 314px;
+transition: all 0.5s ease-in-out;
+margin: 50px 20px 0px 20px;
+padding: 20px;
+cursor: pointer;
+background: #FFFFFF;
+box-shadow: 0px 2px 9px 1px rgba(110, 110, 110, 0.17);
+border-radius: 16px;
+}
+
+.single-service:hover{
+
+  background: #FFFFFF;
+box-shadow: 0px 4px 21px 9px rgba(0, 0, 0, 0.31);
+border-radius: 36px;
+}
+
+.single-service > .single-service-heading {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #1E1D4C;
+}
+
+
+.single-service > .single-service-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #5E6282;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .services-section-content {
+    width: 100%;
+}
+.single-service {
+  margin: 50px 10px 0px 10px;
+  padding: 17px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .services-section {
+    padding: 55px 20px;
+}
+  .services-section-content {
+    flex-direction: column;
+  }
+  .services-section > .service-heading {
+    font-size: 33px;
+}
+.single-service {
+  margin: 12px 10px 0px 10px;
+
+}
+
+}
+/* services  */
+
+
+
+/* destination  */
+.destination-section{
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/DestinationBG.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+
+}
+
+
+.destination-section >  .destination-sub-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #5E6282;
+}
+.destination-section >  .destination-heading{
+  font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 64px;
+text-align: center;
+text-transform: capitalize;
+color: #14183E;
+}
+
+
+.destination-section-content{
+  display: flex;
+  align-items: center;
+  text-align: center;
+justify-content: space-between;
+}
+
+.single-destination-section{
+  
+  text-align: center;
+  cursor: pointer;
+transition: all 0.5s ease-in-out;
+padding: 20px 30px;
+
+}
+
+
+.single-destination-section > a > p {
+  position: relative;
+  padding: 20px 50px;
+  margin-top: -60px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 124.5%;
+color: #5E6282;
+background: #FFFFFF;
+border-radius: 0px 0px 24px 24px;
+box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+}
+.single-destination-section:hover {
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+
+@media screen and (max-width: 900px) {
+  .destination-section{
+    background-position: 98% 57%;
+  }
+  .single-destination-section > a > img {
+    max-width: 98%;
+  
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .destination-section {
+    padding: 31px 20px }
+  .destination-section-content {
+    flex-direction: column;
+  }
+  .destination-section > .destination-heading {
+    font-size: 33px;
+}
+
+
+.single-destination-section{
+  
+padding: 10px 30px;
+
+}
+.single-destination-section > a > img {
+  max-width: 99%;
+
+}
+.single-destination-section > a > p {
+  padding: 20px 15px;
+}
+}
+/* end destination  */
+
+
+/* Book Trip  */
+
+.booktrip-section{
+margin: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.booktrip-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.booktrip-content > .booktrip-subheading {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #5E6282;
+}
+
+.booktrip-content > .booktrip-heading {
+
+  font-family: 'Volkhov';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 64px;
+text-transform: capitalize;
+color: #14183E;
+
+}
+
+.single-booktrip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.single-booktrip > div{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.single-booktrip > div > .single-booktrip-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+
+
+.single-booktrip > div > .single-booktrip-desc{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124.5%;
+color: #5E6282;
+
+}
+
+.booktrip-card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  background: #FFFFFF;
+box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+border-radius: 26px;
+}
+
+.booktrip-card > div > strong{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  letter-spacing: 0.015em;
+  color: #080809;
+  padding: 10px 0;
+}
+
+
+.booktrip-card > div > .booktrip-date{
+  margin: 20px 0;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 124.5%;
+letter-spacing: -0.005em;
+color: #84829A;
+}
+
+.booktrip-card > div > .booktrip-date span{
+  margin: 10px 20px 10px 0px;
+}
+
+.booktrip-card > div > .booktrip-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booktrip-card > div > .booktrip-icons > img{
+  padding-right: 20px;
+}
+
+.booktrip-card > div > .booktrip-people{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 124.5%;
+letter-spacing: -0.02em;
+color: #84829A;
+padding: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .booktrip-content > .booktrip-heading {
+    font-size: 35px;
+}
+.booktrip-card > div{
+  padding: 11px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .booktrip-section {
+    flex-direction: column;
+}
+}
+/* end Book Trip   */
