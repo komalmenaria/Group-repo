@@ -4,7 +4,7 @@ function Destination({url , title}) {
   return (
     <>
     <div className="single-destination-section">
-<a href="#">
+<a href= "/packages" >
 <img src={url} alt="" />
 <p>{title}</p>
 

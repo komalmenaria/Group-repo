@@ -1,7 +1,7 @@
 import React , { useState }  from "react";
 import Logo from "../img/Logo.svg";
-import NavIcon from "../img/navIcon.png";
-import CrossIcon from "../img/crossIcon.png";
+import NavIcon from "../img/navIcon.svg";
+import CrossIcon from "../img/crossIcon.svg";
 import {Link}  from 'react-router-dom'
 
 function Header() {

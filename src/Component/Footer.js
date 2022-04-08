@@ -20,7 +20,7 @@ function Footer() {
             <a href="https://www.facebook.com" className="footer-fb">
               <img src={FBICON} alt="airavat-facebook" />
             </a>
-            <a href="https://instagram.com">
+            <a href="https://www.instagram.com/airavattoursandtravels">
               <img src={INSTAICON} alt="airavat-instagram" />
             </a>
             <a href="https://twitter.com/">

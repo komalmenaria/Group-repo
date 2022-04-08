@@ -2,22 +2,22 @@ import React from "react";
 import Hero from "../img/Hero.svg";
 import Service from "./Service";
 
-import Service1 from "../img/Service1.png";
-import Service2 from "../img/Service2.png";
-import Service3 from "../img/Service3.png";
-import Service4 from "../img/Service4.png";
+import Service1 from "../img/Service1.svg";
+import Service2 from "../img/Service2.svg";
+import Service3 from "../img/Service3.svg";
+import Service4 from "../img/Service4.svg";
 import Destination from "./Destination";
-import Pilgrims from "../img/Pilgrims.png"
-import Holiday from "../img/Holiday.png"
-import Short from "../img/Short.png"
+import Pilgrims from "../img/Pilgrims.svg"
+import Holiday from "../img/Holiday.svg"
+import Short from "../img/Short.svg"
 import BookTrip from "./BookTrip";
-import StepIcon1 from "../img/Step1.png"
-import StepIcon2 from "../img/Step2.png"
-import StepIcon3 from "../img/Step3.png"
+import StepIcon1 from "../img/Step1.svg"
+import StepIcon2 from "../img/Step2.svg"
+import StepIcon3 from "../img/Step3.svg"
 import kedarnath from "../img/kedarnath.jpg"
-import SEND from "../img/send.png"
-import LEAF from "../img/Leaf.png"
-import MAP from "../img/map.png"
+import SEND from "../img/send.svg"
+import LEAF from "../img/Leaf.svg"
+import MAP from "../img/map.svg"
 
 
 
@@ -34,7 +34,7 @@ function Home() {
             west hard for the.
           </p>
           <br />
-          <a href="/about">View Packages</a>
+          <a href="/packages">View Packages</a>
         </div>
 
         <div className="hero-image">
@@ -78,9 +78,9 @@ function Home() {
         <span className="destination-heading">Top Destinations</span>
 
         <div className="destination-section-content">
-        <Destination url={Pilgrims} title="Pilgrims Packages" />
+        <Destination url={Pilgrims} title="Pilgrims Packages"  />
         <Destination url={Holiday} title="Holiday Packages" />
-        <Destination url={Short} title="Short Packages" />
+        <Destination url={Short} title="Short Packages"  />
 
         </div>
       </div>

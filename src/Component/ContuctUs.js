@@ -1,9 +1,9 @@
 import React from 'react'
-import Location from "../img/Locationicon.png"
-import Mail from "../img/mail.png"
-import Call from "../img/call.png"
-import Time from "../img/time.png"
-import contactus from "../img/Contactus1.png"
+import Location from "../img/Locationicon.svg"
+import Mail from "../img/mail.svg"
+import Call from "../img/call.svg"
+import Time from "../img/time.svg"
+import contactus from "../img/Contactus1.svg"
 
 
 
