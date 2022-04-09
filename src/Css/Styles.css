@@ -1194,9 +1194,10 @@ height: 457px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-}
-.Loader{
   width: 100vw;
   height: 100vh;
+  background-color: #fff;
+}
+.Loader{
+  width: 100%;
 }
