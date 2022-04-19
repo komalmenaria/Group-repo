@@ -1152,6 +1152,7 @@ height: 457px;
     margin-top: -60px;
      width: 12.7rem;
      height: 5rem;
+    
     }
   
 
@@ -1197,7 +1198,4 @@ height: 457px;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-}
-.Loader{
-  width: 100%;
 }

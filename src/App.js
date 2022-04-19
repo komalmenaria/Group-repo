@@ -6,6 +6,7 @@ import { BrowserRouter as Router,Routes , Route } from "react-router-dom";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import Loader from "./Component/Loader";
+import ScrollButton from "./Component/ScrollButton";
 
 const Home  = lazy(()=> import("./Component/Home"))
 const About = lazy(()=> import( "./Component/About"))
@@ -21,6 +22,7 @@ function App() {
     <Router>
       <Header />
       < Suspense  fallback={ <Loader /> } >
+      <ScrollButton />
       <Routes  >
         <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<About />} exact /> 

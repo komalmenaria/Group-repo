@@ -1,15 +1,20 @@
-const connectToMongo = require('./db')
-const express = require('express')   
-
+const connectToMongo = require('./db');
 connectToMongo();
+const express = require('express')
+var cors = require('cors')
+var bodyParser = require('body-parser')
 
 const app = express()
-const port = 3000
+const port = process.env.PORT||4000
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.use(cors())
+app.use(bodyParser())
+
+// Available Routes
+app.use('/api/contactForm' , require('./routes/contactForm'))
+app.use('/api/subscribeForm' , require('./routes/subscribeForm'))
+
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port http://localhost:${port}`)
 })
